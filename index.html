@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 정보 수업 안내</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 상단 헤더 -->
+  <header class="header">
+    <div class="header-container">
+      <div class="title-group">
+        <h1 class="site-title">2026 정보 수업 안내</h1>
+        <p class="site-desc">컴퓨팅 사고력으로 미래를 코딩하는 고등학교 정보 수업</p>
+      </div>
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="테마 전환">🌙 어둡게</button>
+    </div>
+  </header>
+
+  <!-- 메인 콘텐츠 영역 -->
+  <main class="main-container">
+    <!-- 1. 수업 소개 -->
+    <section class="section">
+      <h2 class="section-title">💡 수업 소개</h2>
+      <div class="intro-grid">
+        <div class="intro-card">
+          <div class="card-icon">⚡</div>
+          <h3>알고리즘</h3>
+          <p>문제를 효율적으로 해결하는 논리적 절차와 순서도 및 의사코드 작성을 배웁니다.</p>
+        </div>
+        <div class="intro-card">
+          <div class="card-icon">🐍</div>
+          <h3>파이썬</h3>
+          <p>직관적이고 강력한 파이썬 문법을 익히고 다양한 프로그램을 직접 구현해 봅니다.</p>
+        </div>
+        <div class="intro-card">
+          <div class="card-icon">📊</div>
+          <h3>데이터</h3>
+          <p>실생활 데이터를 수집, 정제, 분석하여 의미 있는 정보를 시각화하는 방법을 탐구합니다.</p>
+        </div>
+        <div class="intro-card">
+          <div class="card-icon">🤖</div>
+          <h3>인공지능</h3>
+          <p>머신러닝의 기본 원리와 동작 방식을 이해하고 미래 AI 윤리를 함께 고민합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 학기 일정표 (1~8주차) -->
+    <section class="section">
+      <h2 class="section-title">📅 학기 일정표 (1학기)</h2>
+      <div class="table-container">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>주차</th>
+              <th>주제</th>
+              <th>주요 학습 및 활동 내용</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="week">1주차</td>
+              <td class="topic">오리엔테이션 & 컴퓨팅 사고</td>
+              <td>정보 수업 소개, 실습 환경 설정, 컴퓨팅 사고력의 이해</td>
+            </tr>
+            <tr>
+              <td class="week">2주차</td>
+              <td class="topic">알고리즘 설계</td>
+              <td>문제 분해와 패턴 인식, 순서도를 이용한 알고리즘 표현</td>
+            </tr>
+            <tr>
+              <td class="week">3주차</td>
+              <td class="topic">파이썬 기초 문법</td>
+              <td>변수와 자료형, 표준 입출력 함수(input, print) 실습</td>
+            </tr>
+            <tr>
+              <td class="week">4주차</td>
+              <td class="topic">선택과 반복 구조</td>
+              <td>조건문(if-elif-else)과 반복문(for, while) 제어 흐름</td>
+            </tr>
+            <tr>
+              <td class="week">5주차</td>
+              <td class="topic">함수와 모듈</td>
+              <td>코드 재사용을 위한 사용자 정의 함수와 파이썬 내장 모듈</td>
+            </tr>
+            <tr>
+              <td class="week">6주차</td>
+              <td class="topic">데이터 분석 기초</td>
+              <td>리스트와 딕셔너리를 활용한 데이터 처리 및 기초 통계</td>
+            </tr>
+            <tr>
+              <td class="week">7주차</td>
+              <td class="topic">인공지능 체험과 윤리</td>
+              <td>머신러닝 모델 학습 과정 체험 및 AI 윤리 토론</td>
+            </tr>
+            <tr>
+              <td class="week">8주차</td>
+              <td class="topic">프로젝트 실습 평가</td>
+              <td>주제별 파이썬 프로그래밍 문제 해결 및 1차 실습 평가</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 3. 오늘의 코딩 퀴즈 -->
+    <section class="section">
+      <h2 class="section-title">🧩 오늘의 코딩 퀴즈</h2>
+      <div class="quiz-card">
+        <div class="quiz-header">
+          <span id="quizBadge" class="quiz-badge">문제 1 / 3</span>
+        </div>
+        <p id="quizQuestion" class="quiz-question"><strong>Q.</strong> 다음 파이썬 코드를 실행했을 때 출력되는 결과값은 무엇일까요?</p>
+        <pre class="code-block"><code id="quizCode">numbers = [1, 2, 3, 4, 5]
+result = sum(numbers[:3])
+print(result)</code></pre>
+        <div class="quiz-actions">
+          <button id="quizBtn" class="quiz-btn" type="button">정답 확인하기</button>
+          <button id="quizNextBtn" class="quiz-btn quiz-btn-secondary" type="button">다음 문제 ➔</button>
+        </div>
+        <div id="quizAnswer" class="quiz-answer" style="display: none;">
+          <p id="quizAnswerText" class="answer-text">정답: <strong>6</strong></p>
+          <p id="quizAnswerDesc" class="answer-desc"><code>numbers[:3]</code>은 리스트의 0번째부터 2번째 인덱스까지 슬라이싱하여 <code>[1, 2, 3]</code>이 됩니다. <code>sum([1, 2, 3])</code>은 1 + 2 + 3이므로 결과는 <strong>6</strong>입니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 공지 카드 2개 -->
+    <section class="section">
+      <h2 class="section-title">📢 수업 공지사항</h2>
+      <div class="notice-grid">
+        <div class="notice-card">
+          <div class="notice-tag">평가 안내</div>
+          <h3 class="notice-title">1학기 프로그래밍 실습 평가 안내</h3>
+          <p class="notice-content">8주차에 1차 프로그래밍 실습 평가가 진행됩니다. 수업 시간에 다룬 파이썬 조건문과 반복문 중심의 기본 문제가 출제되니 미리 복습해 두시기 바랍니다.</p>
+        </div>
+        <div class="notice-card">
+          <div class="notice-tag">실습실 수칙</div>
+          <h3 class="notice-title">컴퓨터실 이용 및 과제 관리 수칙</h3>
+          <p class="notice-content">실습실 내 음식물 반입이 금지됩니다. 수업 종료 전 작성한 코드는 개인 클라우드나 지정된 학습 드라이브에 반드시 백업해 주세요.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 하단 푸터 -->
+  <footer class="footer">
+    <p>© 2026 고등학교 정보 교육과정 | 정보 수업 안내 웹사이트</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
