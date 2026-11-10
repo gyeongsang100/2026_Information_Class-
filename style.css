@@ -363,6 +363,12 @@ body.dark-mode .quiz-btn-secondary:hover {
   background-color: var(--surface-color);
 }
 
+.last-updated {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
 /* 반응형 미디어 쿼리 (모바일 화면) */
 @media (max-width: 640px) {
   .main-container {
